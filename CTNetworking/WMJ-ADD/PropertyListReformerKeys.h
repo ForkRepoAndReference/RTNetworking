@@ -10,6 +10,7 @@
 
 extern NSString* const kPropertyListDataKeyAddress;
 extern NSString* const kPropertyListDataKeyTowncode;
+extern NSString* const kPropertyListDataKeyGithubUserName;
 
 @interface PropertyListReformerKeys : NSObject
 

@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		118172816A888E8150338AE0 /* libPods-CTNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E991CD00AE580099C56CF4 /* libPods-CTNetworking.a */; };
+		8E12E90B1D0E7A280057E8E8 /* GithubUserReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12E90A1D0E7A280057E8E8 /* GithubUserReformer.m */; };
+		8E9366E41D0812650069BAA7 /* TestReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9366E31D0812650069BAA7 /* TestReformer.m */; };
+		8E9366E71D0819450069BAA7 /* PropertyListReformerKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9366E61D0819450069BAA7 /* PropertyListReformerKeys.m */; };
+		8EE6F17C1D06A31F000CDA6E /* ZhihuLatestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6F17B1D06A31F000CDA6E /* ZhihuLatestManager.m */; };
+		8EE6F1801D06A88E000CDA6E /* ZhihuService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6F17F1D06A88E000CDA6E /* ZhihuService.m */; };
+		8EE6F1831D06AC95000CDA6E /* TestCaseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6F1821D06AC95000CDA6E /* TestCaseFactory.m */; };
+		8EE6F1871D06B67E000CDA6E /* ZhihuLatestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6F1861D06B67E000CDA6E /* ZhihuLatestAPI.m */; };
+		8EE6F18A1D06BFFE000CDA6E /* ZhihuDetailManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6F1891D06BFFE000CDA6E /* ZhihuDetailManager.m */; };
+		8EE6F18D1D06C0F7000CDA6E /* ZhihuDetailAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6F18C1D06C0F7000CDA6E /* ZhihuDetailAPI.m */; };
+		8EE6F1901D07B3B5000CDA6E /* GithubService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6F18F1D07B3B5000CDA6E /* GithubService.m */; };
+		8EE6F1951D07B508000CDA6E /* GithubSearchUsersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6F1941D07B508000CDA6E /* GithubSearchUsersManager.m */; };
+		8EE6F19A1D07B80A000CDA6E /* GithubSearchUsersAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6F1991D07B80A000CDA6E /* GithubSearchUsersAPI.m */; };
 		ABC677131CF707C100B520A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC677121CF707C100B520A6 /* main.m */; };
 		ABC677161CF707C100B520A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC677151CF707C100B520A6 /* AppDelegate.m */; };
 		ABC677191CF707C100B520A6 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC677181CF707C100B520A6 /* TestViewController.m */; };
@@ -16,7 +28,6 @@
 		ABC677211CF707C100B520A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC6771F1CF707C100B520A6 /* LaunchScreen.storyboard */; };
 		ABC678211CF7109400B520A6 /* TestAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC677FD1CF7109400B520A6 /* TestAPIManager.m */; };
 		ABC678231CF7109400B520A6 /* FireSingleAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC678031CF7109400B520A6 /* FireSingleAPI.m */; };
-		ABC678271CF7138900B520A6 /* TestCaseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC678261CF7138900B520A6 /* TestCaseFactory.m */; };
 		ABC678701CF7251400B520A6 /* NSArray+AXNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC6782B1CF7251400B520A6 /* NSArray+AXNetworkingMethods.m */; };
 		ABC678711CF7251400B520A6 /* NSDictionary+AXNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC6782D1CF7251400B520A6 /* NSDictionary+AXNetworkingMethods.m */; };
 		ABC678721CF7251400B520A6 /* NSMutableString+AXNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC6782F1CF7251400B520A6 /* NSMutableString+AXNetworkingMethods.m */; };
@@ -47,6 +58,30 @@
 /* Begin PBXFileReference section */
 		47AEE7F0CEEB2B4E104FE886 /* Pods-CTNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CTNetworking/Pods-CTNetworking.debug.xcconfig"; sourceTree = "<group>"; };
 		4ADD3645D6296652217469EC /* Pods-CTNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-CTNetworking/Pods-CTNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		8E12E9091D0E7A280057E8E8 /* GithubUserReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GithubUserReformer.h; path = "CTNetworking/WMJ-ADD/GithubUserReformer.h"; sourceTree = SOURCE_ROOT; };
+		8E12E90A1D0E7A280057E8E8 /* GithubUserReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GithubUserReformer.m; path = "CTNetworking/WMJ-ADD/GithubUserReformer.m"; sourceTree = SOURCE_ROOT; };
+		8E9366E21D0812650069BAA7 /* TestReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestReformer.h; path = "CTNetworking/WMJ-ADD/TestReformer.h"; sourceTree = SOURCE_ROOT; };
+		8E9366E31D0812650069BAA7 /* TestReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestReformer.m; path = "CTNetworking/WMJ-ADD/TestReformer.m"; sourceTree = SOURCE_ROOT; };
+		8E9366E51D0819450069BAA7 /* PropertyListReformerKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropertyListReformerKeys.h; path = "CTNetworking/WMJ-ADD/PropertyListReformerKeys.h"; sourceTree = SOURCE_ROOT; };
+		8E9366E61D0819450069BAA7 /* PropertyListReformerKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropertyListReformerKeys.m; path = "CTNetworking/WMJ-ADD/PropertyListReformerKeys.m"; sourceTree = SOURCE_ROOT; };
+		8EE6F17A1D06A31F000CDA6E /* ZhihuLatestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZhihuLatestManager.h; path = "CTNetworking/WMJ-ADD/ZhihuLatestManager.h"; sourceTree = SOURCE_ROOT; };
+		8EE6F17B1D06A31F000CDA6E /* ZhihuLatestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZhihuLatestManager.m; path = "CTNetworking/WMJ-ADD/ZhihuLatestManager.m"; sourceTree = SOURCE_ROOT; };
+		8EE6F17E1D06A88E000CDA6E /* ZhihuService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZhihuService.h; path = "CTNetworking/WMJ-ADD/ZhihuService.h"; sourceTree = SOURCE_ROOT; };
+		8EE6F17F1D06A88E000CDA6E /* ZhihuService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZhihuService.m; path = "CTNetworking/WMJ-ADD/ZhihuService.m"; sourceTree = SOURCE_ROOT; };
+		8EE6F1811D06AC95000CDA6E /* TestCaseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCaseFactory.h; sourceTree = "<group>"; };
+		8EE6F1821D06AC95000CDA6E /* TestCaseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCaseFactory.m; sourceTree = "<group>"; };
+		8EE6F1851D06B67E000CDA6E /* ZhihuLatestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZhihuLatestAPI.h; path = "CTNetworking/WMJ-ADD/ZhihuLatestAPI.h"; sourceTree = SOURCE_ROOT; };
+		8EE6F1861D06B67E000CDA6E /* ZhihuLatestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZhihuLatestAPI.m; path = "CTNetworking/WMJ-ADD/ZhihuLatestAPI.m"; sourceTree = SOURCE_ROOT; };
+		8EE6F1881D06BFFE000CDA6E /* ZhihuDetailManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZhihuDetailManager.h; path = "CTNetworking/WMJ-ADD/ZhihuDetailManager.h"; sourceTree = SOURCE_ROOT; };
+		8EE6F1891D06BFFE000CDA6E /* ZhihuDetailManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZhihuDetailManager.m; path = "CTNetworking/WMJ-ADD/ZhihuDetailManager.m"; sourceTree = SOURCE_ROOT; };
+		8EE6F18B1D06C0F7000CDA6E /* ZhihuDetailAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZhihuDetailAPI.h; path = "CTNetworking/WMJ-ADD/ZhihuDetailAPI.h"; sourceTree = SOURCE_ROOT; };
+		8EE6F18C1D06C0F7000CDA6E /* ZhihuDetailAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZhihuDetailAPI.m; path = "CTNetworking/WMJ-ADD/ZhihuDetailAPI.m"; sourceTree = SOURCE_ROOT; };
+		8EE6F18E1D07B3B5000CDA6E /* GithubService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GithubService.h; path = "CTNetworking/WMJ-ADD/GithubService.h"; sourceTree = SOURCE_ROOT; };
+		8EE6F18F1D07B3B5000CDA6E /* GithubService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GithubService.m; path = "CTNetworking/WMJ-ADD/GithubService.m"; sourceTree = SOURCE_ROOT; };
+		8EE6F1931D07B508000CDA6E /* GithubSearchUsersManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GithubSearchUsersManager.h; path = "CTNetworking/WMJ-ADD/GithubSearchUsersManager.h"; sourceTree = SOURCE_ROOT; };
+		8EE6F1941D07B508000CDA6E /* GithubSearchUsersManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GithubSearchUsersManager.m; path = "CTNetworking/WMJ-ADD/GithubSearchUsersManager.m"; sourceTree = SOURCE_ROOT; };
+		8EE6F1981D07B80A000CDA6E /* GithubSearchUsersAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GithubSearchUsersAPI.h; path = "CTNetworking/WMJ-ADD/GithubSearchUsersAPI.h"; sourceTree = SOURCE_ROOT; };
+		8EE6F1991D07B80A000CDA6E /* GithubSearchUsersAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GithubSearchUsersAPI.m; path = "CTNetworking/WMJ-ADD/GithubSearchUsersAPI.m"; sourceTree = SOURCE_ROOT; };
 		A7E991CD00AE580099C56CF4 /* libPods-CTNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CTNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC6770E1CF707C100B520A6 /* CTNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC677121CF707C100B520A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,8 +98,6 @@
 		ABC677FD1CF7109400B520A6 /* TestAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAPIManager.m; sourceTree = "<group>"; };
 		ABC678021CF7109400B520A6 /* FireSingleAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireSingleAPI.h; sourceTree = "<group>"; };
 		ABC678031CF7109400B520A6 /* FireSingleAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireSingleAPI.m; sourceTree = "<group>"; };
-		ABC678251CF7138900B520A6 /* TestCaseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCaseFactory.h; sourceTree = "<group>"; };
-		ABC678261CF7138900B520A6 /* TestCaseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCaseFactory.m; sourceTree = "<group>"; };
 		ABC6782A1CF7251400B520A6 /* NSArray+AXNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+AXNetworkingMethods.h"; sourceTree = "<group>"; };
 		ABC6782B1CF7251400B520A6 /* NSArray+AXNetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+AXNetworkingMethods.m"; sourceTree = "<group>"; };
 		ABC6782C1CF7251400B520A6 /* NSDictionary+AXNetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+AXNetworkingMethods.h"; sourceTree = "<group>"; };
@@ -146,6 +179,116 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8E9366E11D0812230069BAA7 /* Reformer */ = {
+			isa = PBXGroup;
+			children = (
+				8E9366E51D0819450069BAA7 /* PropertyListReformerKeys.h */,
+				8E9366E61D0819450069BAA7 /* PropertyListReformerKeys.m */,
+				8E9366E21D0812650069BAA7 /* TestReformer.h */,
+				8E9366E31D0812650069BAA7 /* TestReformer.m */,
+				8E12E9091D0E7A280057E8E8 /* GithubUserReformer.h */,
+				8E12E90A1D0E7A280057E8E8 /* GithubUserReformer.m */,
+			);
+			name = Reformer;
+			sourceTree = "<group>";
+		};
+		8EE6F1781D06A230000CDA6E /* WMJ-ADD */ = {
+			isa = PBXGroup;
+			children = (
+				8EE6F17D1D06A84F000CDA6E /* Service */,
+				8EE6F1791D06A258000CDA6E /* APIManager */,
+				8E9366E11D0812230069BAA7 /* Reformer */,
+				8EE6F1841D06B631000CDA6E /* TestCaseList */,
+			);
+			name = "WMJ-ADD";
+			path = TestCase;
+			sourceTree = "<group>";
+		};
+		8EE6F1791D06A258000CDA6E /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				8EE6F1971D07B51B000CDA6E /* Zhihu */,
+				8EE6F1961D07B50F000CDA6E /* Github */,
+			);
+			name = APIManager;
+			sourceTree = "<group>";
+		};
+		8EE6F17D1D06A84F000CDA6E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8EE6F1921D07B47C000CDA6E /* Zhihu */,
+				8EE6F1911D07B470000CDA6E /* Github */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		8EE6F1841D06B631000CDA6E /* TestCaseList */ = {
+			isa = PBXGroup;
+			children = (
+				8EE6F19C1D07B81D000CDA6E /* Zhihu */,
+				8EE6F19B1D07B811000CDA6E /* Github */,
+			);
+			name = TestCaseList;
+			sourceTree = "<group>";
+		};
+		8EE6F1911D07B470000CDA6E /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				8EE6F18E1D07B3B5000CDA6E /* GithubService.h */,
+				8EE6F18F1D07B3B5000CDA6E /* GithubService.m */,
+			);
+			name = Github;
+			sourceTree = "<group>";
+		};
+		8EE6F1921D07B47C000CDA6E /* Zhihu */ = {
+			isa = PBXGroup;
+			children = (
+				8EE6F17E1D06A88E000CDA6E /* ZhihuService.h */,
+				8EE6F17F1D06A88E000CDA6E /* ZhihuService.m */,
+			);
+			name = Zhihu;
+			sourceTree = "<group>";
+		};
+		8EE6F1961D07B50F000CDA6E /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				8EE6F1931D07B508000CDA6E /* GithubSearchUsersManager.h */,
+				8EE6F1941D07B508000CDA6E /* GithubSearchUsersManager.m */,
+			);
+			name = Github;
+			sourceTree = "<group>";
+		};
+		8EE6F1971D07B51B000CDA6E /* Zhihu */ = {
+			isa = PBXGroup;
+			children = (
+				8EE6F17A1D06A31F000CDA6E /* ZhihuLatestManager.h */,
+				8EE6F17B1D06A31F000CDA6E /* ZhihuLatestManager.m */,
+				8EE6F1881D06BFFE000CDA6E /* ZhihuDetailManager.h */,
+				8EE6F1891D06BFFE000CDA6E /* ZhihuDetailManager.m */,
+			);
+			name = Zhihu;
+			sourceTree = "<group>";
+		};
+		8EE6F19B1D07B811000CDA6E /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				8EE6F1981D07B80A000CDA6E /* GithubSearchUsersAPI.h */,
+				8EE6F1991D07B80A000CDA6E /* GithubSearchUsersAPI.m */,
+			);
+			name = Github;
+			sourceTree = "<group>";
+		};
+		8EE6F19C1D07B81D000CDA6E /* Zhihu */ = {
+			isa = PBXGroup;
+			children = (
+				8EE6F1851D06B67E000CDA6E /* ZhihuLatestAPI.h */,
+				8EE6F1861D06B67E000CDA6E /* ZhihuLatestAPI.m */,
+				8EE6F18B1D06C0F7000CDA6E /* ZhihuDetailAPI.h */,
+				8EE6F18C1D06C0F7000CDA6E /* ZhihuDetailAPI.m */,
+			);
+			name = Zhihu;
+			sourceTree = "<group>";
+		};
 		ABC677051CF707C100B520A6 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +313,7 @@
 				ABC678281CF7251400B520A6 /* CTNetworking */,
 				ABC678881CF7271000B520A6 /* CTNetworkingCustoms */,
 				ABC677FA1CF7109400B520A6 /* Demo */,
+				8EE6F1781D06A230000CDA6E /* WMJ-ADD */,
 				ABC677111CF707C100B520A6 /* Supporting Files */,
 			);
 			path = CTNetworking;
@@ -232,8 +376,8 @@
 		ABC678241CF7138900B520A6 /* TestFactory */ = {
 			isa = PBXGroup;
 			children = (
-				ABC678251CF7138900B520A6 /* TestCaseFactory.h */,
-				ABC678261CF7138900B520A6 /* TestCaseFactory.m */,
+				8EE6F1811D06AC95000CDA6E /* TestCaseFactory.h */,
+				8EE6F1821D06AC95000CDA6E /* TestCaseFactory.m */,
 			);
 			path = TestFactory;
 			sourceTree = "<group>";
@@ -569,34 +713,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EE6F18D1D06C0F7000CDA6E /* ZhihuDetailAPI.m in Sources */,
 				ABC678211CF7109400B520A6 /* TestAPIManager.m in Sources */,
 				ABC678231CF7109400B520A6 /* FireSingleAPI.m in Sources */,
+				8EE6F1901D07B3B5000CDA6E /* GithubService.m in Sources */,
+				8EE6F18A1D06BFFE000CDA6E /* ZhihuDetailManager.m in Sources */,
 				ABC678701CF7251400B520A6 /* NSArray+AXNetworkingMethods.m in Sources */,
+				8EE6F1801D06A88E000CDA6E /* ZhihuService.m in Sources */,
+				8E9366E41D0812650069BAA7 /* TestReformer.m in Sources */,
 				ABC678791CF7251400B520A6 /* CTAPIBaseManager.m in Sources */,
 				ABC677191CF707C100B520A6 /* TestViewController.m in Sources */,
+				8EE6F19A1D07B80A000CDA6E /* GithubSearchUsersAPI.m in Sources */,
 				ABC678961CF7271000B520A6 /* CTLoggerConfiguration.m in Sources */,
 				ABC678741CF7251400B520A6 /* NSString+AXNetworkingMethods.m in Sources */,
 				ABC678721CF7251400B520A6 /* NSMutableString+AXNetworkingMethods.m in Sources */,
 				ABC678851CF7251400B520A6 /* CTService.m in Sources */,
 				ABC678841CF7251400B520A6 /* CTUDIDGenerator.m in Sources */,
 				ABC678771CF7251400B520A6 /* CTApiProxy.m in Sources */,
+				8EE6F1951D07B508000CDA6E /* GithubSearchUsersManager.m in Sources */,
 				ABC6787B1CF7251400B520A6 /* CTCachedObject.m in Sources */,
 				ABC678761CF7251400B520A6 /* UIDevice+IdentifierAddition.m in Sources */,
 				ABC678861CF7251400B520A6 /* CTServiceFactory.m in Sources */,
+				8EE6F17C1D06A31F000CDA6E /* ZhihuLatestManager.m in Sources */,
+				8EE6F1831D06AC95000CDA6E /* TestCaseFactory.m in Sources */,
 				ABC678831CF7251400B520A6 /* CTSignatureGenerator.m in Sources */,
 				ABC678811CF7251400B520A6 /* CTCommonParamsGenerator.m in Sources */,
 				ABC6787A1CF7251400B520A6 /* CTCache.m in Sources */,
 				ABC678821CF7251400B520A6 /* CTRequestGenerator.m in Sources */,
+				8E12E90B1D0E7A280057E8E8 /* GithubUserReformer.m in Sources */,
 				ABC6787E1CF7251400B520A6 /* CTLogger.m in Sources */,
 				ABC678731CF7251400B520A6 /* NSObject+AXNetworkingMethods.m in Sources */,
 				ABC678801CF7251400B520A6 /* CTURLResponse.m in Sources */,
+				8EE6F1871D06B67E000CDA6E /* ZhihuLatestAPI.m in Sources */,
 				ABC678711CF7251400B520A6 /* NSDictionary+AXNetworkingMethods.m in Sources */,
 				ABC678951CF7271000B520A6 /* CTAppContext.m in Sources */,
 				ABC678751CF7251400B520A6 /* NSURLRequest+CTNetworkingMethods.m in Sources */,
 				ABC6787D1CF7251400B520A6 /* CTLocationManager.m in Sources */,
 				ABC678981CF7271000B520A6 /* GDMapService.m in Sources */,
+				8E9366E71D0819450069BAA7 /* PropertyListReformerKeys.m in Sources */,
 				ABC677161CF707C100B520A6 /* AppDelegate.m in Sources */,
-				ABC678271CF7138900B520A6 /* TestCaseFactory.m in Sources */,
 				ABC677131CF707C100B520A6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

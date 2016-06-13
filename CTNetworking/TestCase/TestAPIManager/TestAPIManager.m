@@ -8,8 +8,8 @@
 
 #import "TestAPIManager.h"
 
-NSString * const kTestAPIManagerParamsKeyLatitude = @"kTestAPIManagerParamsKeyLatitude";
-NSString * const kTestAPIManagerParamsKeyLongitude = @"kTestAPIManagerParamsKeyLongitude";
+NSString* const kTestAPIManagerParamsKeyLatitude = @"kTestAPIManagerParamsKeyLatitude";
+NSString* const kTestAPIManagerParamsKeyLongitude = @"kTestAPIManagerParamsKeyLongitude";
 
 @interface TestAPIManager () <CTAPIManagerValidator>
 
@@ -28,12 +28,12 @@ NSString * const kTestAPIManagerParamsKeyLongitude = @"kTestAPIManagerParamsKeyL
 }
 
 #pragma mark - CTAPIManager
-- (NSString *)methodName
+- (NSString*)methodName
 {
     return @"geocode/regeo";
 }
 
-- (NSString *)serviceType
+- (NSString*)serviceType
 {
     return kCTServiceGDMapV3;
 }
@@ -48,9 +48,9 @@ NSString * const kTestAPIManagerParamsKeyLongitude = @"kTestAPIManagerParamsKeyL
     return YES;
 }
 
-- (NSDictionary *)reformParams:(NSDictionary *)params
+- (NSDictionary*)reformParams:(NSDictionary*)params
 {
-    NSMutableDictionary *resultParams = [[NSMutableDictionary alloc] init];
+    NSMutableDictionary* resultParams = [[NSMutableDictionary alloc] init];
     resultParams[@"key"] = [[CTServiceFactory sharedInstance] serviceWithIdentifier:kCTServiceGDMapV3].publicKey;
     resultParams[@"location"] = [NSString stringWithFormat:@"%@,%@", params[kTestAPIManagerParamsKeyLongitude], params[kTestAPIManagerParamsKeyLatitude]];
     resultParams[@"output"] = @"json";
@@ -58,18 +58,17 @@ NSString * const kTestAPIManagerParamsKeyLongitude = @"kTestAPIManagerParamsKeyL
 }
 
 #pragma mark - CTAPIManagerValidator
-- (BOOL)manager:(CTAPIBaseManager *)manager isCorrectWithParamsData:(NSDictionary *)data
+- (BOOL)manager:(CTAPIBaseManager*)manager isCorrectWithParamsData:(NSDictionary*)data
 {
     return YES;
 }
 
-- (BOOL)manager:(CTAPIBaseManager *)manager isCorrectWithCallBackData:(NSDictionary *)data
+- (BOOL)manager:(CTAPIBaseManager*)manager isCorrectWithCallBackData:(NSDictionary*)data
 {
     if ([data[@"status"] isEqualToString:@"0"]) {
         return NO;
     }
-    
+
     return YES;
 }
-
 @end

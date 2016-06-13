@@ -7,13 +7,17 @@
 //
 
 #import "FireSingleAPI.h"
+#import "PropertyListReformerKeys.h"
 #import "TestAPIManager.h"
+#import "TestReformer.h"
 #import <UIView+LayoutMethods.h>
 
 @interface FireSingleAPI () <CTAPIManagerParamSource, CTAPIManagerCallBackDelegate>
 
-@property (nonatomic, strong) TestAPIManager *testAPIManager;
-@property (nonatomic, strong) UILabel *resultLable;
+@property (nonatomic, strong) TestAPIManager* testAPIManager;
+@property (nonatomic, strong) UILabel* resultLable;
+
+@property (nonatomic, strong) TestReformer* reformer;
 
 @end
 
@@ -47,31 +51,32 @@
 }
 
 #pragma mark - CTAPIManagerParamSource
-- (NSDictionary *)paramsForApi:(CTAPIBaseManager *)manager
+- (NSDictionary*)paramsForApi:(CTAPIBaseManager*)manager
 {
-    NSDictionary *params = @{};
-    
+    NSDictionary* params = @{};
+
     if (manager == self.testAPIManager) {
         params = @{
-                   kTestAPIManagerParamsKeyLatitude:@(31.228000),
-                   kTestAPIManagerParamsKeyLongitude:@(121.454290)
-                   };
+            kTestAPIManagerParamsKeyLatitude : @(31.228000),
+            kTestAPIManagerParamsKeyLongitude : @(121.454290)
+        };
     }
-    
+
     return params;
 }
 
 #pragma mark - CTAPIManagerCallBackDelegate
-- (void)managerCallAPIDidSuccess:(CTAPIBaseManager *)manager
+- (void)managerCallAPIDidSuccess:(CTAPIBaseManager*)manager
 {
     if (manager == self.testAPIManager) {
         self.resultLable.text = @"success";
-        NSLog(@"%@", [manager fetchDataWithReformer:nil]);
+        //        NSLog(@"%@", [manager fetchDataWithReformer:nil]);
+        [self configWithData:[manager fetchDataWithReformer:self.reformer]];
         [self layoutResultLable];
     }
 }
 
-- (void)managerCallAPIDidFailed:(CTAPIBaseManager *)manager
+- (void)managerCallAPIDidFailed:(CTAPIBaseManager*)manager
 {
     if (manager == self.testAPIManager) {
         self.resultLable.text = @"fail";
@@ -80,8 +85,9 @@
     }
 }
 
+
 #pragma mark - getters and setters
-- (TestAPIManager *)testAPIManager
+- (TestAPIManager*)testAPIManager
 {
     if (_testAPIManager == nil) {
         _testAPIManager = [[TestAPIManager alloc] init];
@@ -91,13 +97,27 @@
     return _testAPIManager;
 }
 
-- (UILabel *)resultLable
+- (TestReformer*)reformer
+{
+    if (_reformer == nil) {
+        _reformer = [[TestReformer alloc] init];
+    }
+    return _reformer;
+}
+
+- (UILabel*)resultLable
 {
     if (_resultLable == nil) {
         _resultLable = [[UILabel alloc] init];
         _resultLable.text = @"loading API...";
     }
     return _resultLable;
+}
+
+#pragma mark - private
+- (void)configWithData:(id)data
+{
+    NSLog(@"%@---%@", data[kPropertyListDataKeyTowncode], data[kPropertyListDataKeyAddress]);
 }
 
 @end
