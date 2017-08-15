@@ -328,8 +328,8 @@ NSString * const kBSUserTokenNotificationUserInfoKeyManagerToContinue = @"kBSUse
     
     if (childIMP == selfIMP) {
         return params;
-    } else {
         // 如果child是继承得来的，那么这里就不会跑到，会直接跑子类中的IMP。
+    } else {
         // 如果child是另一个对象，就会跑到这里
         NSDictionary *result = nil;
         result = [self.child reformParams:params];

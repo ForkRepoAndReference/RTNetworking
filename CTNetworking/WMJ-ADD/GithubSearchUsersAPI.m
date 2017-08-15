@@ -54,15 +54,15 @@ static NSString* const kCellIdentifier = @"cell";
 - (void)layoutButton
 {
     [self.button centerEqualToView:self.view];
-    [self.button setY:200.0];
+    [self.button setCt_y:200.0];
 }
 
 - (void)layoutTableView
 {
-    [self.tableView setX:0];
-    [self.tableView setY:0];
-    [self.tableView setWidth:self.view.width];
-    [self.tableView setHeight:self.view.height];
+    [self.tableView setCt_x:0];
+    [self.tableView setCt_y:0];
+    [self.tableView setCt_width:self.view.ct_width];
+    [self.tableView setCt_height:self.view.ct_height];
 }
 
 #pragma mark - CTAPIManagerParamSource

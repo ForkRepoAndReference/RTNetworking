@@ -12,6 +12,10 @@
 @interface CTServiceFactory : NSObject
 
 + (instancetype)sharedInstance;
+
+/**
+ 根据identifier获取Service
+ */
 - (CTService<CTServiceProtocal> *)serviceWithIdentifier:(NSString *)identifier;
 
 @end

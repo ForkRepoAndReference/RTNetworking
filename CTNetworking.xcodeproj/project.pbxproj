@@ -419,7 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				ABC678471CF7251400B520A6 /* iPhoneTypeDefine.plist */,
-				ABC678391CF7251400B520A6 /* APIProxy */,
+				ABC678391CF7251400B520A6 /* APIProxy(最终的网络请求在这里) */,
 				ABC6783F1CF7251400B520A6 /* BaseAPIManager */,
 				ABC678421CF7251400B520A6 /* CacheComponents */,
 				ABC678481CF7251400B520A6 /* LocationManager */,
@@ -429,12 +429,13 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		ABC678391CF7251400B520A6 /* APIProxy */ = {
+		ABC678391CF7251400B520A6 /* APIProxy(最终的网络请求在这里) */ = {
 			isa = PBXGroup;
 			children = (
 				ABC6783A1CF7251400B520A6 /* CTApiProxy.h */,
 				ABC6783B1CF7251400B520A6 /* CTApiProxy.m */,
 			);
+			name = "APIProxy(最终的网络请求在这里)";
 			path = APIProxy;
 			sourceTree = "<group>";
 		};
@@ -489,7 +490,7 @@
 			isa = PBXGroup;
 			children = (
 				ABC678561CF7251400B520A6 /* CommonParamsGenerator */,
-				ABC678591CF7251400B520A6 /* RequestGenerator */,
+				ABC678591CF7251400B520A6 /* RequestGenerator(可以按需求自定义restful请求的header) */,
 				ABC6785C1CF7251400B520A6 /* SignatureGenerator */,
 				ABC6785F1CF7251400B520A6 /* UDIDGenerator */,
 			);
@@ -505,13 +506,13 @@
 			path = CommonParamsGenerator;
 			sourceTree = "<group>";
 		};
-		ABC678591CF7251400B520A6 /* RequestGenerator */ = {
+		ABC678591CF7251400B520A6 /* RequestGenerator(可以按需求自定义restful请求的header) */ = {
 			isa = PBXGroup;
 			children = (
 				ABC6785A1CF7251400B520A6 /* CTRequestGenerator.h */,
 				ABC6785B1CF7251400B520A6 /* CTRequestGenerator.m */,
 			);
-			path = RequestGenerator;
+			path = "RequestGenerator(可以按需求自定义restful请求的header)";
 			sourceTree = "<group>";
 		};
 		ABC6785C1CF7251400B520A6 /* SignatureGenerator */ = {
@@ -546,20 +547,20 @@
 		ABC678881CF7271000B520A6 /* CTNetworkingCustoms */ = {
 			isa = PBXGroup;
 			children = (
-				ABC678891CF7271000B520A6 /* AppContext */,
+				ABC678891CF7271000B520A6 /* AppContext(可按要求自定义) */,
 				ABC6788C1CF7271000B520A6 /* Configurations */,
-				ABC678911CF7271000B520A6 /* CustomServices */,
+				ABC678911CF7271000B520A6 /* CustomServices(各种服务) */,
 			);
 			path = CTNetworkingCustoms;
 			sourceTree = "<group>";
 		};
-		ABC678891CF7271000B520A6 /* AppContext */ = {
+		ABC678891CF7271000B520A6 /* AppContext(可按要求自定义) */ = {
 			isa = PBXGroup;
 			children = (
 				ABC6788A1CF7271000B520A6 /* CTAppContext.h */,
 				ABC6788B1CF7271000B520A6 /* CTAppContext.m */,
 			);
-			path = AppContext;
+			path = "AppContext(可按要求自定义)";
 			sourceTree = "<group>";
 		};
 		ABC6788C1CF7271000B520A6 /* Configurations */ = {
@@ -573,12 +574,12 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
-		ABC678911CF7271000B520A6 /* CustomServices */ = {
+		ABC678911CF7271000B520A6 /* CustomServices(各种服务) */ = {
 			isa = PBXGroup;
 			children = (
 				ABC678921CF7271000B520A6 /* GDMapService */,
 			);
-			path = CustomServices;
+			path = "CustomServices(各种服务)";
 			sourceTree = "<group>";
 		};
 		ABC678921CF7271000B520A6 /* GDMapService */ = {

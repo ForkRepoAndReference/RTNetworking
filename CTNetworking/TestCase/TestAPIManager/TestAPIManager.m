@@ -48,6 +48,10 @@ NSString* const kTestAPIManagerParamsKeyLongitude = @"kTestAPIManagerParamsKeyLo
     return YES;
 }
 
+
+/**
+ 子类覆盖父类方法，添加额外参数
+ */
 - (NSDictionary*)reformParams:(NSDictionary*)params
 {
     NSMutableDictionary* resultParams = [[NSMutableDictionary alloc] init];
